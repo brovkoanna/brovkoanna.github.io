@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture-03 challenges</title>
+
+    <!-- Start Styles for Task #2 -->
+	<style>
+        p {
+            color: red;
+        } 
+	</style>
+    <!-- End Styles for Task #2 -->
+
+    <!-- Start Styles for Task #3 -->
+    <!-- Замінила селектор ідентифікатора на селектор класу -->
+    <style>
+        .exciting {
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+    </style>
+    <!-- End Styles for Task #3 -->
+
+    <!-- Start Styles for Task #4 -->
+    <style type="text/css">     
+        body {
+            background: var(--bgColor);
+        }
+        div {
+            --bgColor: limegreen;
+        }
+        /* 
+        Колір фона не застосується до елемента <body> в нашому прикладі через те, як використовуються CSS змінні (custom properties) та їх область видимості. Колір body буде білий.
+        CSS змінна --bgColor оголошена в межах селектора div, що означає, що її область видимості обмежена елементами div.
+        */
+        p {
+            background: var(--bgColor);
+        }
+    </style>
+    <!-- End Styles for Task #4 -->
+</head>
+<body>
+
+    <!-- Start Task #1 -->
+    <h2>Сторінка Вікіпедії для мови CSS</h2>
+    <iframe width="800px" height="500px" title="Сторінка Вікіпедії для мови CSS" src="https://uk.wikipedia.org/wiki/CSS"></iframe>
+    <!-- End Task #1 -->  
+    
+    <!-- Start Task #2 -->
+    <p style="color: blue;"> This is my paragraph.</p>
+
+    <!-- 
+        Буде синій колір. Стилі, які зазначені прямо в тегу (інлайнові стилі), мають вищий пріоритет, ніж стилі, які описані у тегу 
+        <style> в <head> або через зовнішні CSS-файли. Це пов'язано з каскадністю і пріоритетами в CSS, які визначають, які стилі 
+        будуть застосовані до елемента у випадку конфлікту.
+            Пріоритетність стилів в CSS визначається наступним чином (від найнижчого до найвищого):
+            1. Користувацькі стилі браузера - стилі за замовчуванням, які використовують браузери.
+            2. Зовнішні стилі та стилі, визначені в секції <head> - стилі, визначені в зовнішніх CSS-файлах (<link>), або в тегу 
+                <style> в <head> частині HTML-документа.
+            3. Внутрішні стилі (атрибут style в HTML-елементі) - стилі, задані безпосередньо в атрибуті style HTML-елемента. Ці 
+                стилі мають вищий пріоритет, тому що вони застосовуються безпосередньо до елемента і вважаються більш специфічними.
+    -->
+    
+    <!-- End Task #2 -->  
+
+
+    
+    <!-- Start Task #3 -->    
+    <!-- Не можна застосовувати однаковий id для декількох елементів. Замінила на клас -->
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+    <p class="exciting">The most exciting paragraph on the page. One of a kind!</p>
+            
+    <div class="exciting">The most exciting paragraph on the page. One of a kind!</div>
+    <!-- End Task #3 --> 
+
+    <!-- Start Task #4 -->    
+    <div>
+        <h3>Div 1</h3>
+        <p>Paragraph 1</p>
+    </div>
+    
+    <div>
+        <h3>Div 2</h3>
+        <p>Paragraph 2</p>
+    </div> 
+    <!-- End Task #4 -->         
+
+</body>
+</html>
