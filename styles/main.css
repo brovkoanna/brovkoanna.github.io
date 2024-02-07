@@ -2,20 +2,7 @@
 
 /* main.css */
 @import url("/styles/common.css");
-
- /* Start Styles for Task #6 */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* @import url("my-imported-styles.css"); 
-При умові що фаіл лежить у корені то потрібно додати /. Якщо фаіл лежить у папці styles то потрібно зробити запис 
-@import url("/styles/my-imported-styles.css". Також спочатку ртеба імпортувати файл, а потім писати стилі для *);
-*/
-/* End Styles for Task #6 */
-
-body {
-    color: var(--primary-text-color);
-    background: var(--primary-bg-color);
-}
+@import url(/styles/nav.css);
+@import url(/styles/hero.css);
+@import url(/styles/catalog.css);
+@import url(/styles/footer.css);
