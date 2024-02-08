@@ -1,0 +1,24 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.task-3 {
+  font-size: 1.6em;
+}
+
+.task-3 span span {
+  font-size: 1.6em;
+}
+
+.task-4 strong {
+  font-size: 1.6em;
+}
+
+.task-4 strong strong {
+  font-size: 1em;
+}
+
+.task-5 ul {
+  list-style-type: square;
+}

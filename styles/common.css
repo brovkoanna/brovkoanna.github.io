@@ -7,20 +7,45 @@
   --main-color: #009;
   --anchor-color: #333;
   --anchor-active-color: salmon;
+  --primary-text-color: #000;
+  --primary-bg-color: #fff;
+  --primary-font-family: "Roboto", sans-serif;
+  --primary-font-size: 0.875rem;
 }
-/* footer {
+
+footer {
   --footer-text-color: #fff;
   --footer-bg-color: #000;
-} */
+}
 
 body {
   color: var(--main-color);
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
 }
+
 h1,
 h2,
 h3 {
-  font-weight: 600;
+  font-weight: 700;
 }
+
+h1 {
+  font-size: 1.45rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.footer-social {
+}
+
 a {
   color: var(--anchor-color);
+  text-decoration: none;
 }
