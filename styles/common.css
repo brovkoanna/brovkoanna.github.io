@@ -7,15 +7,10 @@
   --main-color: #009;
   --anchor-color: #333;
   --anchor-active-color: salmon;
-  --primary-text-color: #000;
-  --primary-bg-color: #fff;
+  /* --primary-text-color: #000;
+  --primary-bg-color: #fff; */
   --primary-font-family: "Roboto", sans-serif;
   --primary-font-size: 0.875rem;
-}
-
-footer {
-  --footer-text-color: #fff;
-  --footer-bg-color: #000;
 }
 
 body {
@@ -27,22 +22,19 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h1 {
-  font-size: 1.45rem;
+  font-size: calc(1.3rem + 1.1vw);
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: calc(1.2rem + 0.8vw);
 }
 
-.list-unstyled {
+ul {
   list-style: none;
-}
-
-.footer-social {
 }
 
 a {

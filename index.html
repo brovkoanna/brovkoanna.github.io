@@ -16,7 +16,7 @@
   <body>
     <header class="page-header">
       <a href="/index.html" class="brand">Shopaholic</a>
-      <nav>
+      <nav class="navbar">
         <a href="/index.html">Home</a>
         <a href="/about.html">About</a>
         <a href="/catalog.html">Catalog</a>
@@ -24,7 +24,7 @@
         <a href="/contact.html">Contact</a>
       </nav>
 
-      <nav>
+      <nav class="toolbar">
         <a href="#" class="like"><i class="fas fa-heart"></i></a>
         <a href="cart.html" class="cart"
           ><i class="fas fa-shopping-cart"></i
@@ -48,8 +48,20 @@
         <header>
           <h2>Our <span>products</span></h2>
         </header>
-
-        <article></article>
+        <div class="product-container">
+          <article class="product">
+            <div class="icons">
+              <a href="" class="fas fa-shopping-cart"></a>
+              <a href="" class="fas fa-heart"></a>
+              <a href="" class="fas fa-eye"></a>
+            </div>
+            <div class="image"></div>
+            <div class="content">
+              <h3>Product name</h3>
+              <div class="price">111.99</div>
+            </div>
+          </article>
+        </div>
       </div>
     </main>
     <!-- divider  -->
@@ -57,11 +69,11 @@
     <!-- services  -->
     <section id="services"></section>
 
-    <footer class="page-footer">
-      <div>
-        <section>
-          <div>
-            <h2>About</h2>
+    <footer class="">
+      <div class="page-footer">
+        <section class="footer-main">
+          <div class="footer-main-item">
+            <h2 class="footer-title">About</h2>
             <ul>
               <li><a href="#">Services</a></li>
               <li><a href="#">Portfolio</a></li>
@@ -72,8 +84,8 @@
             </ul>
           </div>
 
-          <div>
-            <h2>Resources</h2>
+          <div class="footer-main-item">
+            <h3 class="footer-title">Resources</h3>
             <ul>
               <li><a href="#">Docs</a></li>
               <li><a href="#">Blog</a></li>
@@ -82,8 +94,8 @@
             </ul>
           </div>
 
-          <div>
-            <h2>Contact</h2>
+          <div class="footer-main-item">
+            <h3 class="footer-title">Contact</h3>
             <ul>
               <li><a href="#">Help</a></li>
               <li><a href="#">Sales</a></li>
@@ -92,7 +104,7 @@
           </div>
         </section>
         <section class="footer-social">
-          <ul class="list-unstyled">
+          <ul class="list-unstyled footer-social-list">
             <li>
               <a target="_blank" href="https://facebook.com"
                 ><i class="fab fa-facebook-square"></i
@@ -126,14 +138,12 @@
           </ul>
         </section>
 
-        <section>
-          <ul>
+        <section class="footer-ligal">
+          <ul class="footer-ligal-list">
             <li><a href="#">Terms &amp; Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li>&copy; 2024 Copyright Shopaholic Inc.</li>
           </ul>
-
-          <a href="https://www.google.com/" target="_blank">Google</a>
         </section>
       </div>
     </footer>
