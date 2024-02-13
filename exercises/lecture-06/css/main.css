@@ -1,37 +1,37 @@
-.task2 > ul > li > a {
+.task2 a {
   color: indigo;
 }
-.task2 ul > li > a:visited {
+.task2 a:visited {
   color: gold;
 }
-.task2 > ul > li > a:hover {
+.task2 a:hover {
   color: salmon;
 }
-.task2 ul > li > a:active {
+.task2 a:active {
   color: red;
 }
-.task2 ul > li > a:focus {
+.task2 a:focus {
   color: orange;
 }
-input:in-range {
+input[type="number"]:in-range {
   background-color: rgb(0 255 0 / 0.25);
 }
-input:out-of-range {
+input[type="number"]:out-of-range {
   background-color: rgb(255 0 0 / 0.25);
 }
-.task4 > ul > li:first-child {
+.task4 ul li:first-child {
   color: orange;
 }
-.task5 > ul :first-of-type {
+.task5 ul :first-of-type {
   color: orange;
 }
-.task6 > ul :last-of-type {
+.task6 ul :last-of-type {
   color: orange;
 }
-.task7 > ul > li:not(.first-item) {
+.task7 ul li:not(.first-item) {
   color: orange;
 }
-.task7 > ul > li:not(.first-item):not(:last-of-type) {
+.task7 ul li:not(.first-item):not(:last-of-type) {
   background: yellow;
   color: black;
 }
@@ -51,5 +51,5 @@ h1.hero::after {
   content: " Слава!";
 }
 .cont::before {
-  content: "§";
+  content: "\0A7";
 }
