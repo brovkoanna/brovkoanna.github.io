@@ -7,14 +7,38 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <style>
-
+        .negative {
+            background: linear-gradient(to left, 
+                #ADD8E6 -50%,
+                #87CEEB -10%,
+                #0000FF 0%,
+                #0000FF 100%,
+                #00008B 150%
+            );
+        }
+        .percents {
+            background: linear-gradient(to bottom,
+                #98FB98 2em,
+                #32CD32 4em,
+                #228B22 8em,
+                #006400 16em,
+                #006400 32em,
+                #006400 64em,
+                #006400 128em
+            );
+        }
+        .radial {
+            background: radial-gradient(ellipse at center top,
+                orange,
+                transparent
+            ),
+            radial-gradient(ellipse at center bottom,
+                red,
+                transparent 
+            );
+            background-size: cover;
+        }
     </style>
-    - Встановити background для класу negative як лінійний градієнт, що напрвлений вліво, та моє такі точки зупинки: 
-    -50%, -10%, 0%, 100%, 150%. Для кожної точки зупинки встановити колір, що змінюється від світлосинього до темносинього. 
-    - Встановити background для класу percents як лінійний градієнт, що напрвлений вниз, та моє такі точки зупинки: 2em, 4em, 
-    8em, 16em, 32em, 64em, 128em. Для кожної точки зупинки встановити колір, що змінюється від світлозеленого до темнозеленого. 
-    - Встановити background для класу radial два радіальних градієнта з типом ellipse, перший з яких містить 2 кольори - 
-    помаранчевмй та прозорий і напрвлений вверх, а другий містить 2 кольори - червонмй та прозорий і напрвлений вниз. 
 
 </head>
 
@@ -23,21 +47,65 @@
     <h1>Gradient Text Glow</h1>
 
     <div class="percents">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
     </div>
 
     <div class="negative">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
     </div>
 
     <div class="radial">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
     </div>
-</div>
-<p>
-  <a href="../../index.html">Home</a> |
-  <a href="/../../exercises/index.html">Exercises</a>
-</p>
+  
+    <p>
+        <a href="../../index.html">Home</a> |
+        <a href="/../../exercises/index.html">Exercises</a>
+    </p>
+
+    <svg width="140" height="140">
+        <!-- Створення фону прямокутника -->
+        <rect x="20" y="20" width="100" height="100" fill="#f0f0f0" />
+    
+        <!-- Створення обрамлення прямокутника -->
+        <rect x="20" y="20" width="100" height="100" stroke="#1c87c9" stroke-width="4" fill="none" />
+    </svg>
+
+
+    <svg width="200" height="200">
+        <circle cx="100" cy="70" r="60" stroke="red" stroke-width="4" fill="lightgray"/>
+    </svg>
+
+    <svg width="200" height="200" viewBox="0 0 100 100">
+        <!-- Циферблат -->
+        <circle cx="50" cy="50" r="45" fill="none" stroke="black" stroke-width="2" />
+  
+        <!-- Стрілка годин -->
+        <line x1="50" y1="50" x2="50" y2="25" stroke="black" stroke-width="3" transform="rotate(90 50 50)"/>
+  
+        <!-- Стрілка хвилин -->
+        <line x1="20" y1="50" x2="50" y2="50" stroke="black" stroke-width="2" transform="rotate(90 50 50)"/>
+  
+        <!-- Цифра "3" -->
+        <text x="82" y="55" font-family="Arial" font-size="12" fill="black">3</text>
+    </svg>
+    <svg width="200" height="200" viewBox="0 0 200 200">
+
+        <line x1="100" y1="0" x2="70" y2="80" stroke="black" stroke-width="2"/>
+        <line x1="60" y1="120" x2="30" y2="200" stroke="black" stroke-width="2"/>
+        <line x1="100" y1="0" x2="135" y2="80" stroke="black" stroke-width="2"/>
+        <line x1="145" y1="120" x2="180" y2="200" stroke="black" stroke-width="2"/>
+        <line x1="0" y1="80" x2="72" y2="80" stroke="black" stroke-width="2"/>
+        <line x1="132" y1="80" x2="200" y2="80" stroke="black" stroke-width="2"/>
+        <line x1="0" y1="80" x2="60" y2="120" stroke="black" stroke-width="2"/>
+        <line x1="100" y1="150" x2="180" y2="200" stroke="black" stroke-width="2"/>
+        <line x1="200" y1="80" x2="145" y2="120" stroke="black" stroke-width="2"/>
+        <line x1="100" y1="150" x2="30" y2="200" stroke="black" stroke-width="2"/>
+        
+        
+  
+
+    </svg>
 </body>
 </body>
 </html>
