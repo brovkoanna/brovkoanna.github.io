@@ -1,23 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-</head>
-<body>
-    <nav>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" type="text/css" />
+  </head>
+  <body>
+    <header class="page-header mb-3">
+      <a href="/index.html" class="brand">Shopaholic</a>
+      <nav class="navbar">
         <a href="/index.html">Home</a>
         <a href="/about.html">About</a>
         <a href="/catalog.html">Catalog</a>
-        <a href="/Blog.html">Blog</a>
+        <a href="/blog.html">Blog</a>
         <a href="/contact.html">Contact</a>
-    </nav>
-    <header>
-        <h1>Blog</h1>
+      </nav>
+
+      <nav class="toolbar">
+        <a href="#" class="like"><i class="fas fa-heart"></i></a>
+        <a href="cart.html" class="cart"
+          ><i class="fas fa-shopping-cart"></i
+        ></a>
+        <a href="#!" class="profile"><i class="fas fa-user"></i></a>
+      </nav>
     </header>
-    <footer>
-        <a href="https://www.google.com/"target="_blank">Google</a>
+    <h1>Blog</h1>
+    <footer class="mb-3">
+      <div class="page-footer">
+        <section class="footer-main">
+          <div class="footer-main-item">
+            <h2 class="footer-title">About</h2>
+            <ul>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="/exercises">Exercises</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-main-item">
+            <h3 class="footer-title">Resources</h3>
+            <ul>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Webinars</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-main-item">
+            <h3 class="footer-title">Contact</h3>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Sales</a></li>
+              <li><a href="#">Advertise</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer-social py-3">
+          <ul class="list-unstyled footer-social-list">
+            <li>
+              <a target="_blank" href="https://facebook.com"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.io"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://linkedin.com"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://youtube.com"
+                ><i class="fab fa-youtube" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://instagram.com"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-ligal">
+          <ul class="footer-ligal-list">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li>&copy; 2024 Copyright Shopaholic Inc.</li>
+          </ul>
+        </section>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

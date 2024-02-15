@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .min-content {
+        inline-size: min-content;
+      }
+      .max-content {
+        inline-size: max-content;
+      }
+      .fit-content {
+        inline-size: fit-content;
+      }
+
+      .block {
+        width: 200px;
+        height: 200px;
+        background-image: url("/images/product-5.jpg");
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-size: cover;
+        padding: 20px;
+        border: 20px solid rgb(0 0 0/0.3);
+      }
+      .c1 {
+        background-clip: padding-box;
+      }
+      .c2 {
+        background-clip: border-box;
+      }
+      .c3 {
+        background-clip: content-box;
+      }
+      .box {
+        padding: 10px 20px 25px 20px;
+        margin: 25px 20px;
+      }
+      .box {
+        width: 300px;
+        padding: 10px;
+        border: dashed 2px green;
+      }
+
+      .first-box {
+        width: 200px;
+        height: 100px;
+        border: 8px solid blue;
+        padding: 20px;
+        background: yellow;
+      }
+      .second-box {
+        width: 200px;
+        height: 100px;
+        border: 8px solid blue;
+        background: yellow;
+      }
+      div {
+        box-sizing: content-box;
+        width: 200px;
+        border: 8px solid blue;
+        padding: 20px;
+        background: yellow;
+      }
+      div {
+        box-sizing: border-box;
+        width: 200px;
+        border: 8px solid blue;
+        padding: 20px;
+        background: yellow;
+      }
+      #example1,
+      #example2,
+      #example3 {
+        border: 10px dotted black;
+        padding: 15px;
+        background: lightblue;
+      }
+      #example1 {
+        background-clip: border-box;
+      }
+      #example2 {
+        background-clip: padding-box;
+      }
+      #example3 {
+        background-clip: content-box;
+      }
+      h1 {
+        display: inline-block;
+        inline-size: min-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="first-box"></div>
+    <div class="second-box"></div>
+
+    <div id="example1">
+      <p>
+        Правило для example1: фон всередині елемента має простягатися за межі
+        рамки.
+      </p>
+    </div>
+
+    <div id="example2">
+      <p>
+        Правило для example2: фон всередині елемента має простягатися до
+        внутрішнього краю рамки.
+      </p>
+    </div>
+
+    <div id="example3">
+      <p>
+        Правило для example3: фон всередині елемента має простягатися до краю
+        поля вмісту.
+      </p>
+    </div>
+    <h1><span>Awesome article</span></h1>
+
+    <p class="min-content">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </p>
+    <p class="max-content">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </p>
+    <p class="fit-content">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </p>
+    <div class="block c1"></div>
+    <div class="block c2"></div>
+    <div class="block c3"></div>
+  </body>
+</html>
