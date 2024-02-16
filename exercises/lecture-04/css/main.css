@@ -1,35 +1,49 @@
-h1, h2, h3 {
-    color: grey;
+:root {
+  font-size: 100%;
+}
+body {
+  font-size: 140%;
+}
+h1,
+h2,
+h3 {
+  color: grey;
 }
 #main {
-    color: #e60202;
+  color: #e60202;
+}
+h1 {
+  font-size: 240%;
 }
 .h2 {
-    color: red;
+  color: red;
 }
 .heading {
-    color: rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
 }
 ul > li {
-    font-weight: bold;
+  font-weight: bold;
 }
 section > p {
-    color: red;
-   }
-section p {
-        font-size: 40px;
+  color: red;
 }
-#h2 {
+section p {
+  font-size: 40px;
+}
+
+.task-4 {
+  h2:first-of-type {
     color: indigo;
+  }
 }
 .first a {
-    color: green;
+  color: green;
 }
 p .first a {
-    color: green;
+  color: green;
 }
 div ~ p {
-    color: salmon;
+  color: salmon;
 }
 /* 
 black: #000; rgb (0 0 0); rgb (0 0 0 / 0.5); hsl (0 0% 0%);
@@ -40,7 +54,7 @@ white: #fff; rgb (255 255 255); rgb (255 255 255 / 0.5); hsl (0 0% 100%);
 yellow: #ffff00; rgb (255 255 0); rgb (255 255 0 / 0.5); hsl (60 100% 50%); 
 */
 .translucent-box {
-    background-color: hsl(0deg, 100%, 50%, 0.5);
+  background-color: hsl(0 100% 50% / 0.5);
 }
 
 /* Task #7

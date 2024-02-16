@@ -12,11 +12,7 @@ body {
 }
 
 .task-4 strong {
-  font-size: 1.6em;
-}
-
-.task-4 strong strong {
-  font-size: 1em;
+  font-size: 1.6rem;
 }
 
 .task-5 ul {

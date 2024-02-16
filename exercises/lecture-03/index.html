@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lecture-03 challenges</title>
-    <link rel="stylesheet" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./favicon.ico" type="image/x-icon" />
 
-    <!-- Start Styles for Task #2 -->
-	<style>
-        p {
-            color: red;
-        } 
-	</style>
-    <!-- End Styles for Task #2 -->
-
-    <!-- Start Styles for Task #3 -->
-    <!-- Замінила селектор ідентифікатора на селектор класу -->
     <style>
-        .exciting {
-            background: #f69d3c;
-            border: 1px solid #696969;
-            padding: 10px;
-        }
-    </style>
-    <!-- End Styles for Task #3 -->
+      /* Start Styles for Task #2 */
+      p {
+        color: red;
+      }
+      /* End Styles for Task #2 */
 
-    <!-- Start Styles for Task #4 -->
-    <style type="text/css">     
-        body {
-            background: var(--bgColor);
-        }
-        div {
-            --bgColor: limegreen;
-        }
-        /* 
+      /* Start Styles for Task #3 */
+      /* Замінила селектор ідентифікатора на селектор класу */
+      .exciting {
+        background: #f69d3c;
+        border: 1px solid #696969;
+        padding: 10px;
+      }
+      /* End Styles for Task #3 */
+
+      /* Start Styles for Task #4 */
+      body {
+        background: var(--bgColor);
+      }
+      div {
+        --bgColor: limegreen;
+      }
+
+      /* 
         Колір фона не застосується до елемента <body> в нашому прикладі через те, як використовуються CSS змінні (custom properties) та їх область видимості. Колір body буде білий.
         CSS змінна --bgColor оголошена в межах селектора div, що означає, що її область видимості обмежена елементами div.
         */
-        p {
-            background: var(--bgColor);
-        }
-    </style>
-    <!-- End Styles for Task #4 -->
-</head>
-<body>
+      p {
+        background: var(--bgColor);
+      }
 
+      /* End Styles for Task #4 */
+    </style>
+  </head>
+  <body>
     <!-- Start Task #1 -->
     <h2>Сторінка Вікіпедії для мови CSS</h2>
-    <iframe width="800px" height="500px" title="Сторінка Вікіпедії для мови CSS" src="https://uk.wikipedia.org/wiki/CSS"></iframe>
-    <!-- End Task #1 -->  
-    
+    <iframe
+      width="800px"
+      height="500px"
+      title="Сторінка Вікіпедії для мови CSS"
+      src="https://uk.wikipedia.org/wiki/CSS"
+    ></iframe>
+    <!-- End Task #1 -->
+
     <!-- Start Task #2 -->
-    <p style="color: blue;"> This is my paragraph.</p>
+    <p style="color: blue">This is my paragraph.</p>
 
     <!-- 
         Буде синій колір. Стилі, які зазначені прямо в тегу (інлайнові стилі), мають вищий пріоритет, ніж стилі, які описані у тегу 
@@ -64,32 +66,35 @@
             3. Внутрішні стилі (атрибут style в HTML-елементі) - стилі, задані безпосередньо в атрибуті style HTML-елемента. Ці 
                 стилі мають вищий пріоритет, тому що вони застосовуються безпосередньо до елемента і вважаються більш специфічними.
     -->
-    
-    <!-- End Task #2 -->  
 
+    <!-- End Task #2 -->
 
-    
-    <!-- Start Task #3 -->    
+    <!-- Start Task #3 -->
     <!-- Не можна застосовувати однаковий id для декількох елементів. Замінила на клас -->
     <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
-    <p class="exciting">The most exciting paragraph on the page. One of a kind!</p>
-            
-    <div class="exciting">The most exciting paragraph on the page. One of a kind!</div>
-    <!-- End Task #3 --> 
-
-    <!-- Start Task #4 -->    
-    <div>
-        <h3>Div 1</h3>
-        <p>Paragraph 1</p>
-    </div>
-    
-    <div>
-        <h3>Div 2</h3>
-        <p>Paragraph 2</p>
-    </div> 
-    <!-- End Task #4 -->         
-    <p>
-        <a href="../../index.html">Home</a> | <a href="/../../exercises/index.html">Exercises</a>
+    <p class="exciting">
+      The most exciting paragraph on the page. One of a kind!
     </p>
-</body>
+
+    <div class="exciting">
+      The most exciting paragraph on the page. One of a kind!
+    </div>
+    <!-- End Task #3 -->
+
+    <!-- Start Task #4 -->
+    <div>
+      <h3>Div 1</h3>
+      <p>Paragraph 1</p>
+    </div>
+
+    <div>
+      <h3>Div 2</h3>
+      <p>Paragraph 2</p>
+    </div>
+    <!-- End Task #4 -->
+    <p>
+      <a href="../../index.html">Home</a> |
+      <a href="../../exercises/index.html">Exercises</a>
+    </p>
+  </body>
 </html>
