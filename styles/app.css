@@ -143,6 +143,7 @@
   padding: 0.5rem 2rem 0.5rem 2rem;
   border: 1px coral solid;
   border-radius: 20px;
+  display: inline-block;
 }
 
 .btn-red-gradient:hover {

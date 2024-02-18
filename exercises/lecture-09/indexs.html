@@ -4,59 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lecture-09</title>
+    <link rel="stylesheet" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <style>
-      body {
-        width: 400%;
-        overflow-x: hidden;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      .box {
-        width: 200px;
-        height: 100px;
-        padding: 20px;
-        font-size: 4rem;
-      }
-      .red {
-        background-color: red;
-        padding: 1rem;
-      }
-      .green {
-        background-color: green;
-      }
-      .blue {
-        background-color: blue;
-      }
-      .yellow {
-        background-color: yellow;
-      }
-      .pink {
-        background-color: pink;
-      }
-      .pink::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-      .left {
-        float: left;
-      }
-      .right {
-        float: right;
-      }
-      .clear-left {
-        clear: left;
-      }
-    </style>
-    <div>
-      <div class="box red">1</div>
-      <div class="box green left">2</div>
-      <div class="box yellow">3</div>
-      <div class="box blue right">4</div>
-      <div class="box pink">5 <img src="/images/product-5.jpg" alt="" /></div>
+    <h1>Управління потоком</h1>
+    <p class="task1">
+      <img src="./example.jpg" />
+      Examples of the CSS float Property Below are some examples of how the CSS
+      float property works.
+    </p>
+    <div class="task2">
+      <p>
+        Статичне позиціонування є типовим для кожного елемента. Це просто
+        означає, помістіть елемент у звичайне положення в документі.
+      </p>
+      <p class="static-position">
+        Статичне позиціонування є типовим для кожного елемента. Це просто
+        означає, помістіть елемент у звичайне положення в документі.
+      </p>
+
+      <p class="relative-position">
+        Відносне позиціювання. Положення елемента встановлюється відносно його
+        поточного положення. Додавання властивостей left, top, right і bottom
+        змінює позицію елемента і зрушує його в ту чи іншу сторону. Ця
+        властивість дозволяє змінювати позицію елемента без зміни макету.
+      </p>
+      <p class="absolute-position">
+        Абсолютне позиціювання. Після видалення елемента зі звичайного потоку
+        елементи розташовуються безпосередньо по відношенню до їхнього
+        батьківського елемента, який розташований відносно або абсолютно
+      </p>
     </div>
+    <div class="task4">
+      <h2>Sticky positioning</h2>
+
+      <dl>
+        <dt>A</dt>
+        <dd>Apple</dd>
+        <dd>Ant</dd>
+        <dd>Altimeter</dd>
+        <dd>Airplane</dd>
+        <dt>B</dt>
+        <dd>Bird</dd>
+        <dd>Buzzard</dd>
+        <dd>Bee</dd>
+        <dd>Banana</dd>
+        <dd>Beanstalk</dd>
+        <dt>C</dt>
+        <dd>Calculator</dd>
+        <dd>Cane</dd>
+        <dd>Camera</dd>
+        <dd>Camel</dd>
+        <dt>D</dt>
+        <dd>Duck</dd>
+        <dd>Dime</dd>
+        <dd>Dipstick</dd>
+        <dd>Drone</dd>
+        <dt>E</dt>
+        <dd>Egg</dd>
+        <dd>Elephant</dd>
+        <dd>Egret</dd>
+      </dl>
+    </div>
+
+    <a href="../../index.html">Home</a> |
+    <a href="./../../exercises/index.html">Exercises</a>
   </body>
 </html>

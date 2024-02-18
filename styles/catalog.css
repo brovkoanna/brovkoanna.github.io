@@ -4,17 +4,16 @@ main .container h2 > span {
 main .container h2 {
   text-transform: uppercase;
 }
+.bg-sale {
+  background-color: red;
+  color: white;
+}
 .product-container {
   > .product {
     width: 12.5rem;
     overflow: hidden;
     position: relative;
-    .product:hover h3 {
-      bottom: 1rem;
-    }
-    .product:hover .icons {
-      z-index: 10;
-    }
+
     > .icons {
       position: absolute;
       top: 1rem;
@@ -38,6 +37,14 @@ main .container h2 {
     }
     > .image {
       object-fit: cover;
+      > .badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.45rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
     }
     > .content {
       padding: 1rem;
@@ -67,6 +74,12 @@ main .container h2 {
         float: right;
       }
     }
+  }
+  > .product:hover h3 {
+    bottom: 1.5rem;
+  }
+  > .product:hover .icons {
+    z-index: 10;
   }
 }
 
