@@ -1,0 +1,22 @@
+.header-container {
+  --header-beckground-color: #fff7e6;
+  --header-a-color: #000;
+  --header-color: #000;
+  --header-hover-color: ;
+}
+.nav-container {
+  background-color: var(--header-beckground-color);
+  color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul,
+.toolbar ul {
+  display: flex;
+}
+.nav ul li,
+.toolbar ul li {
+  padding-right: 20px;
+}

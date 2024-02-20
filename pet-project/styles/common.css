@@ -1,11 +1,30 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
-  /* padding: 0; */
+  box-sizing: border-box;
 }
 
-body {
-  background-color: #fffffa;
+ul {
+  list-style: none;
 }
-nav {
-  color: #000111;
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.column {
+  padding: 0 10px;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+.column-4 {
+  width: 33.333%;
 }

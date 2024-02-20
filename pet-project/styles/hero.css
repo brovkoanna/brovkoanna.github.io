@@ -1,0 +1,39 @@
+.hero-content {
+  position: relative;
+  max-width: 524px;
+  border: 2px dashed #000;
+  border-radius: 26px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    display: inline;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+    display: inline;
+  }
+}
+.hero-content:before {
+  content: "";
+  background-image: url(../image/bee.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -10px;
+  left: 110px;
+}
+.hero-section {
+  background-image: url(../image/unsplash_nesUgwNX3u4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 170px 0 265px;
+}

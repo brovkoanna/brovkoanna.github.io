@@ -9,6 +9,10 @@
 
   > .footer-main {
     background-color: var(--footer-beckground-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.25rem 1.875rem;
     > .footer-main-item {
       > ul > li > a {
         color: var(--footer-a-color);
@@ -26,6 +30,7 @@
       }
       > .footer-title {
         font-size: 1.1rem;
+        text-align: center;
         color: var(--footer-light-color);
       }
     }
@@ -33,6 +38,9 @@
   > .footer-social {
     background-color: var(--footer-social-beckground-color);
     text-align: center;
+    display: flex;
+    justify-content: center;
+
     > .footer-social-list {
       > li {
         display: inline-block;
@@ -49,7 +57,11 @@
   }
   > .footer-ligal {
     background-color: var(--footer-ligal-background-color);
-    .footer-ligal-list {
+
+    > .footer-ligal-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
       > li {
         white-space: nowrap;
         a {
@@ -57,6 +69,9 @@
         }
         a:hover {
           color: var(--footer-a-color);
+        }
+        > li:nth-last-child(2) {
+          flex: 1;
         }
       }
     }

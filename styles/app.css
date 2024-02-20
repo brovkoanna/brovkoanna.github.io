@@ -126,6 +126,9 @@
 .mr-5 {
   margin-right: 10rem;
 }
+mt-5 {
+  margin-top: 10rem;
+}
 
 .d-inline-block {
   display: inline-block;
