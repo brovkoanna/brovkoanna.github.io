@@ -1,6 +1,22 @@
 .header {
   background-color: var(--header-beckground-color);
+  box-shadow: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 }
+.header--home {
+  background-color: transparent;
+}
+
+.header:hover {
+  box-shadow: 5px 4px 9px 0px #00000040;
+}
+
+.header--home:hover {
+  background-color: var(--header-beckground-color);
+}
+
 .nav-container {
   padding: 0 10px;
 }
@@ -8,8 +24,23 @@
 .nav ul,
 .toolbar ul {
   display: flex;
+  padding: 0;
+  li {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+  }
 }
-.nav ul li,
-.toolbar ul li {
-  padding-right: 20px;
+.nav ul li + li,
+.toolbar ul li + li {
+  padding-left: 20px;
+}
+
+a {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.3px;
 }

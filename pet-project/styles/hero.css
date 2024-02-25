@@ -21,7 +21,7 @@
     display: inline;
   }
 }
-.hero-content:before {
+.hero-content::before {
   content: "";
   background-image: url(../image/bee.svg);
   background-repeat: no-repeat;
@@ -36,4 +36,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 170px 0 265px;
+}
+
+.hero-button-container {
+  width: 100%;
+  max-width: 181px;
+  margin-top: 65px;
 }

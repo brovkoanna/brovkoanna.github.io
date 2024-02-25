@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Створюємо три колонки з однаковою шириною */
+  grid-gap: 20px; /* Встановлюємо відстань між елементами сітки */
+}
+
+.header,
+.footer {
+  grid-column: 1 / -1; /* Розтягуємо header і footer на всі 3 колонки */
+}
+
+.sidebar {
+  grid-column: 1; /* Розміщуємо sidebar у першій колонці */
+}
+
+.main {
+  grid-column: 2 / 4; /* Розтягуємо main, щоб він займав другу та третю колонки */
+}

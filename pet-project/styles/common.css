@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Playfair Display";
+}
+
 ul {
   list-style: none;
 }
@@ -34,4 +38,58 @@ a {
 
 .column-4 {
   width: 33.333%;
+}
+
+.button {
+  position: relative;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+  width: 100%;
+  padding: 18px 10px;
+  display: inline-block;
+  background-color: #fdb415;
+  border-radius: 4px;
+  text-align: center;
+  .dashed {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    border: 1px dashed #fef0cf;
+  }
+  .text {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.button::before,
+.button::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.button::before {
+  background-image: url(../image/pentagon-white-small.svg);
+  width: 42px;
+  height: 45px;
+  top: 2px;
+  left: 8px;
+}
+
+.button::after {
+  background-image: url(../image/pentagon-white-big.svg);
+  width: 58px;
+  height: 54px;
+  top: 2px;
+  right: 9px;
+}
+.button:hover {
+  background-color: #ffcd29;
+  box-shadow: 5px 4px 9px 0px #00000040;
 }

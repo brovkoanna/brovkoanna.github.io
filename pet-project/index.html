@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/main.css" type="text/css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--home">
       <div class="container">
         <section class="space-between nav-container">
           <div class="brand">
@@ -29,18 +29,16 @@
 
           <div class="toolbar">
             <ul>
-              <li><a href="">EN</a>/<a href="">UA</a></li>
+              <!-- <li><a href="">EN</a>/<a href="">UA</a></li> -->
               <li>
-                <a href=""><img src="./image/i.ri-user-3-line.svg" alt="" /></a>
+                <a href=""><img src="./image/user.svg" alt="" /></a>
               </li>
               <li>
-                <a href=""
-                  ><img src="./image/i.ri-heart-3-line.svg" alt=""
-                /></a>
+                <a href=""><img src="./image/heart.svg" alt="" /></a>
               </li>
               <li>
                 <a href="">
-                  <img src="./image/i.ri-shopping-cart-line.svg" alt="" />
+                  <img src="./image/shopping.svg" alt="" />
                 </a>
               </li>
             </ul>
@@ -60,14 +58,33 @@
               impress you.
             </p>
           </div>
-          <a href="./catalog.html" class="button">GO SHOP</a>
+          <div
+            class="hero-button-container pentagon-white-smol pentagon-white-big"
+          >
+            <a href="./catalog.html" class="button">
+              <span class="text">GO SHOP</span>
+              <span class="dashed"></span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <main>
-      <div class="catalog">
-        <h2>CATALOG</h2>
+      <div class="container">
+        <div class="column column-12">
+          <h2>Catalog</h2>
+          <section class="catalog">
+            <ul>
+              <li>
+                <a href="#"></a><img src="./image/honey.jpg" alt="" />Honey</a>
+
+              </li>
+            </ul>
+            <img src="./image/mixes.jpg" alt="" /><a href="#">Mixes</a>
+            <img src="./image/pollen.jpg" alt="" /><a href="#">Pollen</a>
+          </section>
+        </div>
       </div>
       <div class="mission">
         <h2>Our Mission Store Natural Honey</h2>
