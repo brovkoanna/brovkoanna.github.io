@@ -20,7 +20,7 @@
 body {
   color: var(--main-color);
   font-family: var(--primary-font-family);
-  font-size: var(--primary-font-size);
+  font-size: clamp(0.85rem, 1.2rem, 1rem);
 }
 
 h1,
@@ -30,11 +30,15 @@ h3 {
 }
 
 h1 {
-  font-size: calc(1.3rem + 1.1vw);
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 h2 {
-  font-size: calc(1.2rem + 0.8vw);
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 1.5vw, 1.3rem);
 }
 
 ul {
