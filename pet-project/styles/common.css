@@ -61,6 +61,7 @@ a {
     border: 1px dashed #fef0cf;
   }
   .text {
+    text-transform: uppercase;
     position: relative;
     z-index: 1;
   }
