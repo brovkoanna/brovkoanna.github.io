@@ -1,0 +1,26 @@
+.about-section {
+  background-image: url(../image/Honeycombs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 53px;
+  padding-bottom: 77px;
+
+  .about-content {
+    max-width: 784px;
+    margin: 0 auto;
+    p {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0.3px;
+      text-align: center;
+    }
+  }
+}
+
+.about-button-container {
+  width: 100%;
+  max-width: 320px;
+  margin: 39px auto 0;
+}
