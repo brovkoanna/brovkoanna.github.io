@@ -4,6 +4,7 @@
   z-index: 1;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 .header--home {
   background-color: transparent;

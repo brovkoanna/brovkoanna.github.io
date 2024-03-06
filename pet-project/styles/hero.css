@@ -31,25 +31,41 @@
   bottom: -10px;
   left: 110px;
   animation-name: bee;
-  animation-duration: 30s;
+  animation-duration: 50s;
+  transform: translate(0, 0) rotate(0deg);
   animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
 }
 @keyframes bee {
   0% {
     transform: translate(0, 0);
   }
-  25% {
+  31% {
     transform: translate(394px, 0);
   }
-  50% {
-    transform: translate(394px, -160px);
+  33% {
+    transform: translate(394px, 0) rotate(-90deg) translate(26px);
   }
-  75% {
-    transform: translate(-394px, -160px);
+  43% {
+    transform: translate(394px, -160px) rotate(-90deg);
   }
-
+  45% {
+    transform: translate(394px, -160px) rotate(-180deg) translate(26px);
+  }
+  81% {
+    transform: translate(-115px, -160px) rotate(-180deg);
+  }
+  83% {
+    transform: translate(-115px, -160px) rotate(-270deg) translate(26px);
+  }
+  93% {
+    transform: translate(-115px, -5px) rotate(-270deg);
+  }
+  95% {
+    transform: translate(-115px, -5px) rotate(-360deg) translate(26px);
+  }
   100% {
-    transform: translate(0, 0);
+    transform: translate(0px, 0px) rotate(-360deg);
   }
 }
 .hero-section {
