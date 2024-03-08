@@ -50,6 +50,11 @@ a {
     width: 50%;
   }
 }
+.column-sm-12 {
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
 
 .column-md-4 {
   @media (max-width: 768px) {
