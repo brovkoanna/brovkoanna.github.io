@@ -1,5 +1,5 @@
 .catalog {
-  gap: 20px;
+  flex-wrap: wrap;
 
   .honey {
     background-image: url(../image/honey.jpg);
@@ -20,9 +20,10 @@
 }
 .background-color-a {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  max-width: 413px;
+  /* max-width: 413px; */
   background-color: #fece67;
   padding-top: 37px;
   padding-bottom: 37px;

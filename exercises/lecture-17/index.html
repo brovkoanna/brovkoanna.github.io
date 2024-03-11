@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecteru 17</title>
+  </head>
+  <body>
+    <script>
+      //   let x = 3;
+      //   let y = 4;
+
+      //x == 3; //true
+      //x === "3"; //fals
+      //x != 5; //true
+      //x !== "5"; //true
+      //X !== 3; //X is not defined
+      //y > 5; //fals
+      //y >= 3; //true
+      //y < 5; //fals
+      //y <= 2; //fals
+      //1 == true; //true
+      //null == undefined; //true
+      //NaN == NaN; //fals
+
+      //   let x = 3;
+      //   let y = 4;
+      //   let z = 5;
+
+      //   x ||= y; результатом буде 3 так як операція прирветься на першому true
+      //   x || (y = z); результатом буде 3 так як операція прирветься на першому true
+      //   x &&= y; результатом буде 4 останнє true та відбудеться присвоєння х значення 4
+      //   x && (y = z); результатом буде 5. відбудеться присвоєння y значення 5
+      //   x ??= y;результатом буде 4 так як операція прирветься на першому true
+      //   x ?? (y = z);результатом буде 4 так як операція прирветься на першому true
+
+      //   const number = Number(prompt("Введіть число", ""));
+      //   if (isNaN(number)) {
+      //     alert("Це не схоже на число");
+      //   } else {
+      //     if (number === 3) {
+      //       alert("Congratulations, You did it!");
+      //     } else if (number > 3) {
+      //       alert("The number is too long");
+      //     } else {
+      //       alert("The number is short");
+      //     }
+      //   }
+
+      //   const day = prompt("Введіть день тижня", "");
+      //   if (day === "") {
+      //     alert("Insert day");
+      //   } else {
+      //     if (day === "Monday" || day === "Понеділок") {
+      //       alert("Start of the work week!");
+      //     } else if (day === "Friday" || day === "П`ятниця") {
+      //       alert("End of the work week!");
+      //     } else {
+      //       alert("A regular day");
+      //     }
+      //   }
+      //   switch (day) {
+      //     case "Monday":
+      //     case "Понеділок":
+      //       alert("Start of the work week!");
+      //       break;
+      //     case "Friday":
+      //     case "П`ятниця":
+      //       alert("End of the work week!");
+      //       break;
+      //     default:
+      //       alert("A regular day");
+      //       break;
+      //   }
+
+      //   const score = Number(prompt("Введіть score", ""));
+      //   if (isNaN(score)) {
+      //     alert("Це не схоже на число");
+      //   } else {
+      //     if (score < 50) {
+      //       alert("F");
+      //     } else if (score < 70) {
+      //       alert("D");
+      //     } else if (score < 80) {
+      //       alert("C");
+      //     } else if (score < 90) {
+      //       alert("B");
+      //     } else {
+      //       alert("A");
+      //     }
+      //   }
+      //   switch (true) {
+      //     case score < 50:
+      //       alert("F");
+      //       break;
+      //     case score < 70:
+      //       alert("D");
+      //       break;
+      //     case score < 80:
+      //       alert("C");
+      //       break;
+      //     case score < 90:
+      //       alert("B");
+      //       break;
+      //     default:
+      //       alert("A");
+      //       break;
+      //   }
+
+      let firstName = null;
+      let lastName = undefined;
+      let username = (firstName || lastName) ?? "Guest";
+
+      console.log(username); // вираз (firstName || lastName) виконується першим, і якщо обидва, firstName та lastName, є null або undefined, тоді ?? "Guest" замінить весь вираз на "Guest".
+    </script>
+  </body>
+</html>
