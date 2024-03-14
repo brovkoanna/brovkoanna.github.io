@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    - функція checkAge повертає true, якщо параметр age перевищує 18. - в іншому
+    випадку запитує підтвердження та повертає результат:
+
+    <script>
+      //Task 1
+      //   function checkAge(age) {
+      //     if (age > 18) {
+      //       return true;
+      //     }
+      //     return confirm("Did parents allow you?");
+      //   }
+      //   Ні, функція не буде працювати інакше після видалення else. В обох випадках,
+      //   якщо age більше 18, то функція поверне true. Якщо age не більше 18, то виконається confirm('Did parents allow you?').
+
+      //   Не існує різниці в поведінці цих двох варіантів коду. В JavaScript, якщо умова в if виразі
+      //   є істинною і виконується return оператор, то виконання функції негайно завершується, і else блок (якщо він існує)
+      //   ігнорується. У варіанті без else, якщо умова в if виразі не виконується, виконання продовжується наступним рядком після
+      //   if блоку. Тому поведінка функції залишається незмінною, незалежно від того, чи є else блок, чи ні.
+      //   checkAge(18);
+      //   checkAge(25);
+
+      //Task 2
+      //   function checkAge(age) {
+      //     return age > 18 ? true : confirm("Did parents allow you?");
+      //   }
+      //   checkAge(18);
+      //   function checkAge(age) {
+      //     return age > 18 || confirm("Did parents allow you?");
+      //   }
+
+      //Task 3
+      //   return (age > 18) || confirm('Did parents allow you?');
+      //   У виразі return (age > 18) || confirm('Did parents allow you?');, дужки навколо age > 18 технічно не обов'язкові
+      //   з точки зору синтаксису JavaScript, оскільки оператор порівняння > має вищий пріоритет, ніж логічний оператор ||.
+      //   Це означає, що вираз age > 18 буде оцінений спочатку, а потім результат буде використаний у логічному порівнянні
+      //   з результатом виклику confirm('Did parents allow you?'). Tехнічно дужки навколо age > 18 не потрібні, використання
+      //   їх може бути корисним з точки зору кращої практики написання читабельного та зрозумілого коду.
+
+      //Task 4
+      //   function min(a, b) {
+      // if (a < b) {
+      //   return a;
+      // } else {
+      //   return b;
+      // }
+      // return a < b ? a : b;
+      //   }
+      //   const minNumber = min(10, 4);
+      //   console.log(minNumber);
+
+      //Task 5
+      //   function pow(x, n) {
+      //     if (n < 1) {
+      //       return;
+      //     } else if (n == 1) {
+      //       return x;
+      //     } else {
+      //       return x * pow(x, n - 1);
+      //     }
+      //   }
+      //   const number = Number(prompt("Введіть значення х", ""));
+      //   const powNumber = Number(prompt("Введіть значення n", ""));
+
+      //   if (!isNaN(number) && !isNaN(powNumber)) {
+      //     const test = pow(number, powNumber);
+      //     test ? alert(test) : alert("Неправильне значення параметра n.");
+      //   }
+
+      //Task 6
+      // const ask = (question, yes, no) => {
+      //   if (confirm(question)) yes();
+      //   else no();
+      // };
+
+      //Task 7
+      // const ask = function (question, yes, no) {
+      //   if (confirm(question)) yes();
+      //   else no();
+      // };
+      //Task 8
+      function A() {
+        console.log("A was called");
+        return undefined;
+      }
+      function B() {
+        console.log("B was called");
+        return false;
+      }
+      function C() {
+        console.log("C was called");
+        return "foo";
+      }
+      console.log(A() || C());
+      console.log(B() || C());
+    </script>
+  </body>
+</html>

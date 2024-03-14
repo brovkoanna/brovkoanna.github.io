@@ -83,6 +83,75 @@
   width: 221px;
   height: 312px;
   position: absolute;
-  top: 299px;
+  top: 167px;
   left: 1017px;
+}
+
+.soti-top {
+  background-image: url(../image/soti-top.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 250px;
+}
+.reviews-h2 {
+  margin-top: 42px;
+}
+.bg-reviews {
+  background-image: url(../image/reviews.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 115px 20px;
+  margin-bottom: 80px;
+  .reviews {
+    width: 100%;
+    max-width: 995px;
+    border-top: solid 1px #fff7e6;
+    border-bottom: solid 1px #fff7e6;
+    margin: 0 auto;
+    p {
+      color: #fff7e6;
+      text-align: left;
+      font-style: italic;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0.3px;
+      padding: 26px 61px;
+
+      span {
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+}
+.reviews {
+  @media (max-width: 576px) {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+.reviews {
+  @media (max-width: 768px) {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+.reviews img {
+  @media (max-width: 576px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+.reviews img {
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.soti-bottom {
+  background-image: url(../image/soti-bottom.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 250px;
 }

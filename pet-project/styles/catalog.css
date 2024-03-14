@@ -1,16 +1,3 @@
-.catalog {
-  flex-wrap: wrap;
-
-  .honey {
-    background-image: url(../image/honey.jpg);
-  }
-  .mixes {
-    background-image: url(../image/mixes.jpg);
-  }
-  .pollen {
-    background-image: url(../image/pollen.jpg);
-  }
-}
 .honey,
 .mixes,
 .pollen {
@@ -18,6 +5,17 @@
   background-repeat: no-repeat;
   padding-top: 237px;
 }
+
+.honey {
+  background-image: url(../image/honey.jpg);
+}
+.mixes {
+  background-image: url(../image/mixes.jpg);
+}
+.pollen {
+  background-image: url(../image/pollen.jpg);
+}
+
 .background-color-a {
   display: flex;
   width: 100%;
