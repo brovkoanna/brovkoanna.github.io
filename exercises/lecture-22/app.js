@@ -8,7 +8,7 @@ const classes = ["first", "second", "third", "fourth"];
 //console.log(h1Tag.length);
 
 //Використовуючи цикл for, вивести на консоль кожний елемент з отриманого об'єкту.
-// for (i = 0; i < h1Tag.length; i++) {
+// for (let i = 0; i < h1Tag.length; i++) {
 //   console.log(h1Tag[i]);
 // }
 
@@ -39,15 +39,15 @@ const classes = ["first", "second", "third", "fourth"];
 
 // task 6
 // Знайти всі елементи з класом container.
-// const containerClass = document.getElementsByClassName("container");
+const containerClass = document.getElementsByClassName("container");
 // console.log(containerClass);
 //Використовуючи цикл for, вивести на консоль перший елемент для кожного зі знайдених елементів.
 
-// for (const container of containerClass) {
-//   console.log(container.children[0]);
-//   //task 7
-//   console.log((container.children[0].innerHTML));
-// }
+for (let i = 0; i < containerClass.length; i++) {
+  console.log(containerClass[i].firstElementChild);
+  //task 7
+  // console.log(container.children[0].innerHTML);
+}
 
 // task 8
 // Знайти колекцію всіх елементів з селектором '.container header', зберегти її в змінній headers.
