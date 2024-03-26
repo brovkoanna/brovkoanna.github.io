@@ -1,7 +1,7 @@
-// const fruits = 'apple banana cantaloupe blueberries grapefruit';
-
 // 1. Перетворити рядок fruits у масив. Результат зберегти у масиві fruits.
-const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];
+let fruits = "apple banana cantaloupe blueberries grapefruit";
+fruits = fruits.split(" ");
+console.log(fruits);
 
 // 2. Використовуючи цикл for, вивести на консоль список елементів з масиву fruits.
 for (let i = 0; i < fruits.length; i++) {
