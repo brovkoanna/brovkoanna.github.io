@@ -1,6 +1,7 @@
 class AuthException extends Error {
   constructor(code, message) {
-    this.message;
+    super(); // Викликаємо конструктор базового класу Error
+    this.message = message ? `${code}: ${message}` : code;
   }
 
   toString() {

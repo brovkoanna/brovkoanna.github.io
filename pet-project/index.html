@@ -17,13 +17,13 @@
           </div>
 
           <nav class="nav">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./catalog.html">Product</a></li>
-              <li><a href="./shipping.html">Shipping</a></li>
-              <li><a href="./about.html">About US</a></li>
-              <li><a href="./blog.html">Blog</a></li>
-              <li><a href="./contact.html">Contacts</a></li>
+            <ul class="menu">
+              <li><a class="menuItem" href="./index.html">Home</a></li>
+              <li><a class="menuItem" href="./catalog.html">Product</a></li>
+              <li><a class="menuItem" href="./shipping.html">Shipping</a></li>
+              <li><a class="menuItem" href="./about.html">About US</a></li>
+              <li><a class="menuItem" href="./blog.html">Blog</a></li>
+              <li><a class="menuItem" href="./contact.html">Contacts</a></li>
             </ul>
           </nav>
 
@@ -42,7 +42,32 @@
                 </a>
               </li>
             </ul>
-            <p></p>
+            <button class="hamburger">
+              <svg
+                class="menuIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+              </svg>
+              <svg
+                class="closeIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
           </div>
         </section>
       </div>
@@ -76,15 +101,21 @@
           <h2>Catalog</h2>
         </div>
         <section class="space-between">
-          <div class="column-none column-md-4">
-            <a href="#!" class="background-color-a honey">Honey</a>
-          </div>
-          <div class="column-none column-md-4">
-            <a href="#!" class="background-color-a mixes">Mixes</a>
-          </div>
-          <div class="column-none column-md-4">
-            <a href="#!" class="background-color-a pollen">Pollen</a>
-          </div>
+          <a href="#!" class="catalog-section-item honey">
+            <div class="">
+              <p class="background-color-p">Honey</p>
+            </div>
+          </a>
+          <a href="#!" class="catalog-section-item mixes">
+            <div class="">
+              <p class="background-color-p">Mixes</p>
+            </div>
+          </a>
+          <a href="#!" class="catalog-section-item pollen">
+            <div class="">
+              <p class="background-color-p">Pollen</p>
+            </div>
+          </a>
         </section>
       </div>
       <div class="container">
@@ -205,34 +236,48 @@
           </section>
 
           <section class="footer-main space-between">
-            <div class="footer-main-item">
+            <div class="footer-main-item max-width">
               <h2 class="footer-title">Contacts</h2>
               <ul>
                 <li>
-                  <img src="./image/footer-telefon.svg" alt="tel" />+380 (068)
-                  000 00 00
+                  <img
+                    src="./image/footer-telefon.svg"
+                    alt="tel"
+                    style="float: left"
+                  />
+                  +380 (068) 000 00 00
                 </li>
                 <li>
                   <img
                     src="./image/footer-telegram.svg"
                     alt="telegram"
-                  />info@naturalhoney.com
+                    style="float: left"
+                  />
+                  info@naturalhoney.com
                 </li>
                 <li>
-                  <img src="./image/footer-adres.svg" alt="" />Dnipro, st. Lina
-                  Kostenko, 20
+                  <img
+                    src="./image/footer-adres.svg"
+                    alt=""
+                    style="float: left"
+                  />
+                  Dnipro, st. Lina Kostenko, 20
                 </li>
               </ul>
             </div>
 
             <div class="footer-main-item">
               <h2 class="footer-title">Subscribe to us</h2>
-              <ul class="footer-ligal-list logo">
-                <li><img src="./image/footer-inst.svg" alt="instagram" /></li>
-                <li><img src="./image/footer-F.svg" alt="facebook" /></li>
-              </ul>
+              <div class="center">
+                <a href="#">
+                  <img src="./image/footer-inst.svg" alt="instagram" />
+                </a>
+                <a href="#">
+                  <img src="./image/footer-F.svg" alt="facebook" />
+                </a>
+              </div>
             </div>
-            <div class="footer-main-item">
+            <div class="footer-main-item max-width">
               <h2 class="footer-title">Information</h2>
               <ul>
                 <li><a href="#">About us</a></li>
@@ -258,5 +303,6 @@
         </section>
       </div>
     </footer>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

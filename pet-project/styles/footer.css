@@ -1,9 +1,14 @@
 .footer {
   background-image: url(../image/footer-bg.png);
-  padding: 158px 188px 48px;
+
+  padding: 158px 60px 48px;
   background-repeat: repeat-x;
   background-size: auto;
   position: relative;
+
+  @media (min-width: 955px) {
+    padding: 158px 188px 48px;
+  }
 }
 
 footer::before {
@@ -13,8 +18,19 @@ footer::before {
   width: 100%;
   height: 125px;
   position: absolute;
-  top: 1px;
+  top: 10px;
   left: 0px;
+}
+footer::after {
+  content: "";
+  background-image: url(../image/bg-color.jpg);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  bottom: 1px;
+  left: 0px;
+  z-index: -1;
 }
 
 .footer-section {
@@ -24,6 +40,7 @@ footer::before {
   }
   .footer-main {
     margin-bottom: 32px;
+    align-items: flex-start;
     ul {
       padding: 0;
     }
@@ -31,8 +48,9 @@ footer::before {
       width: 100%;
       text-align: center;
       margin-bottom: 20px;
+      padding: 0;
 
-      @media (min-width: 992px) {
+      @media (min-width: 1397px) {
         width: 33.333%;
         text-align: left;
         margin-bottom: 0px;
@@ -40,8 +58,8 @@ footer::before {
     }
     h2 {
       color: #654501;
-      font-weight: 500;
-      font-size: 14px;
+      font-weight: 600;
+      font-size: 20px;
       line-height: 21px;
       letter-spacing: 0.3px;
       text-align: center;
@@ -50,22 +68,26 @@ footer::before {
     li {
       color: #654501;
       font-weight: 500;
-      font-size: 12px;
-      line-height: 18px;
+      font-size: 18px;
+      line-height: 24px;
       letter-spacing: 0.3px;
+      text-align: left;
+      padding-left: 50px;
+      margin-bottom: 8px;
     }
     li > a {
       color: #654501;
       font-weight: 500;
-      font-size: 12px;
+      font-size: 18px;
       line-height: 18px;
       letter-spacing: 0.3px;
+      padding-left: 10px;
     }
   }
 }
 .footer-ligal-list {
   display: flex;
-  padding-left: 0px;
+  padding-left: 50px;
 
   li + li {
     padding-left: 14px;
@@ -74,7 +96,14 @@ footer::before {
 .footer-ligal p {
   color: #654501;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.3px;
+  padding-left: 50px;
+}
+img {
+  margin: 0 7px;
+}
+.center {
+  text-align: center;
 }
