@@ -1,6 +1,6 @@
 class AuthException extends Error {
   constructor(code, message) {
-    super(); // Викликаємо конструктор базового класу Error
+    super();
     this.message = message ? `${code}: ${message}` : code;
   }
 
@@ -26,3 +26,22 @@ function showDialog(e) {
 function closeDialog() {
   dialogBoxId.close();
 }
+
+const checkAuth = document.querySelector(".check-auth");
+
+checkAuth.addEventListener("click", () => {
+  try {
+    if (!isAuth()) {
+      throw new AuthException(
+        "FORBIDDEN",
+        "You don't have access to this page"
+      );
+    }
+
+    window.open("success.html");
+  } catch (e) {
+    const dialogBox = document.getElementById("dialogBox");
+    dialogBox.querySelector(".message").innerText = e.toString();
+    showDialog();
+  }
+});
