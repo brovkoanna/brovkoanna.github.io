@@ -34,9 +34,6 @@
                 <a href=""><img src="./image/user.svg" alt="" /></a>
               </li>
               <li>
-                <a href=""><img src="./image/heart.svg" alt="" /></a>
-              </li>
-              <li>
                 <a href="">
                   <img src="./image/shopping.svg" alt="" />
                 </a>
@@ -101,17 +98,17 @@
           <h2>Catalog</h2>
         </div>
         <section class="space-between">
-          <a href="#!" class="catalog-section-item honey">
+          <a href="../catalog.html" class="catalog-section-item honey">
             <div class="">
               <p class="background-color-p">Honey</p>
             </div>
           </a>
-          <a href="#!" class="catalog-section-item mixes">
+          <a href="../catalog.html" class="catalog-section-item mixes">
             <div class="">
               <p class="background-color-p">Mixes</p>
             </div>
           </a>
-          <a href="#!" class="catalog-section-item pollen">
+          <a href="../catalog.html" class="catalog-section-item pollen">
             <div class="">
               <p class="background-color-p">Pollen</p>
             </div>
@@ -198,6 +195,25 @@
           </div>
         </section>
         <div class="soti-bottom"></div>
+      </div>
+      <div class="container">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">0</li>
+              <li class="glide__slide">1</li>
+              <li class="glide__slide">2</li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              next
+            </button>
+          </div>
+        </div>
       </div>
 
       <div class="container">
@@ -304,5 +320,9 @@
       </div>
     </footer>
     <script src="./js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide(".glide").mount();
+    </script>
   </body>
 </html>
