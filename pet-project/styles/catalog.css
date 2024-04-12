@@ -96,12 +96,16 @@
 }
 .cards {
   margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
 
   .card {
-    width: 23%;
+    width: 25%;
     padding: 12px 17px;
+    text-align: center;
     img {
       padding: 34px 67px;
+      max-height: 180px;
     }
     h4 {
       color: #000;
