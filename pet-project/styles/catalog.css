@@ -100,9 +100,19 @@
   flex-wrap: wrap;
 
   .card {
-    width: 25%;
+    width: 100%;
     padding: 12px 17px;
     text-align: center;
+    @media (min-width: 415px) {
+      width: 50%;
+      padding: 12px 17px;
+      text-align: center;
+    }
+    @media (min-width: 992px) {
+      width: 25%;
+      padding: 12px 17px;
+      text-align: center;
+    }
     img {
       padding: 34px 67px;
       max-height: 180px;

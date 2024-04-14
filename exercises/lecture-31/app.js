@@ -1,4 +1,5 @@
 const url = "https://jsonplaceholder.typicode.com/posts";
+const usersUrl = "https://jsonplaceholder.typicode.com/users";
 
 const template = (item) => `
 <h3>${item.title}</h3>
@@ -28,11 +29,23 @@ const xhrPromise = (method, url) => {
   return promise;
 };
 
-xhrPromise("GET", url).then((response) => {
-  const posts = JSON.parse(response);
-  let result = "";
-  posts.forEach((item) => {
-    result += template(item);
+xhrPromise("GET", url)
+  .then((response) => {
+    const posts = JSON.parse(response);
+    let result = "";
+    posts.forEach((item) => {
+      result += template(item);
+    });
+    document.getElementById("blog").innerHTML = result;
+  })
+  .then(() => {
+    xhrPromise("GET", usersUrl).then((responsUsers) => {
+      const users = JSON.parse(responsUsers);
+      users.forEach((user) => {
+        const spans = document.querySelectorAll(`[data-id="${user.id}"]`);
+        spans.forEach((span) => {
+          span.textContent = user.name;
+        });
+      });
+    });
   });
-  document.getElementById("blog").innerHTML = result;
-});
