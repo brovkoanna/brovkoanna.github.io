@@ -9,6 +9,9 @@
   @media (min-width: 955px) {
     padding: 158px 188px 48px;
   }
+  img {
+    margin: 0 7px;
+  }
 }
 
 footer::before {
@@ -101,9 +104,7 @@ footer::after {
   letter-spacing: 0.3px;
   padding-left: 50px;
 }
-img {
-  margin: 0 7px;
-}
+
 .center {
   text-align: center;
 }
