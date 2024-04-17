@@ -92,6 +92,7 @@ a {
   background-color: #fdb415;
   border-radius: 4px;
   text-align: center;
+  border: none;
   .dashed {
     position: absolute;
     top: 8px;

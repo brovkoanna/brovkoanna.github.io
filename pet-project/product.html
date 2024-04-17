@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="./styles/main.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <section class="space-between nav-container">
+          <div class="brand">
+            <a href="./index.html">
+              <img src="./image/logo header.svg" alt="Brend Natural Honey" />
+            </a>
+          </div>
+
+          <nav class="nav">
+            <ul class="menu">
+              <li><a class="menuItem" href="./index.html">Home</a></li>
+              <li><a class="menuItem" href="./catalog.html">Product</a></li>
+              <li><a class="menuItem" href="./shipping.html">Shipping</a></li>
+              <li><a class="menuItem" href="./about.html">About US</a></li>
+              <li><a class="menuItem" href="./blog.html">Blog</a></li>
+              <li><a class="menuItem" href="./contact.html">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div class="toolbar">
+            <ul>
+              <!-- <li><a href="">EN</a>/<a href="">UA</a></li> -->
+              <li>
+                <a href=""><img src="./image/user.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./image/shopping.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+            <button class="hamburger">
+              <svg
+                class="menuIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+              </svg>
+              <svg
+                class="closeIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="product">
+          <!-- переробити слайдер -->
+          <div class="embla">
+            <div class="embla__viewport">
+              <div class="embla__container">
+                <div class="embla__slide">
+                  <img src="./image/product.jpg" alt="" />
+                </div>
+                <div class="embla__slide">
+                  <img src="./image/product1.jpg" alt="" />
+                </div>
+                <div class="embla__slide">
+                  <img src="./image/product2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <span class="embla__arrow embla__prev"
+              ><svg
+                width="25"
+                height="45"
+                viewBox="0 0 25 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.3282 3.79408C24.5428 3.5794 24.7105 3.32686 24.8219 3.05088C24.9333 2.7749 24.986 2.48089 24.9772 2.18564C24.9684 1.89038 24.8981 1.59966 24.7704 1.33008C24.6427 1.06049 24.4601 0.817322 24.233 0.61445C24.0059 0.411578 23.7388 0.252978 23.4468 0.147705C23.1549 0.0424319 22.8439 -0.0074529 22.5315 0.000899477C22.2192 0.00925185 21.9117 0.0756775 21.6265 0.196384C21.3413 0.31709 21.0841 0.489713 20.8695 0.704397L0.65021 20.9425C0.232655 21.36 0 21.9128 0 22.4874C0 23.0619 0.232655 23.6147 0.65021 24.0322L20.8695 44.2726C21.0827 44.492 21.3398 44.6691 21.6261 44.7938C21.9123 44.9184 22.2219 44.988 22.5368 44.9986C22.8517 45.0092 23.1657 44.9605 23.4606 44.8554C23.7555 44.7502 24.0253 44.5908 24.2544 44.3863C24.4835 44.1817 24.6674 43.9362 24.7953 43.664C24.9232 43.3917 24.9926 43.0981 24.9994 42.8003C25.0063 42.5025 24.9505 42.2063 24.8353 41.929C24.72 41.6518 24.5477 41.3989 24.3282 41.1851L5.65032 22.4874L24.3282 3.79408Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+            <span class="embla__arrow embla__next"
+              ><svg
+                width="25"
+                height="45"
+                viewBox="0 0 25 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.671833 41.2059C0.457228 41.4206 0.289455 41.6731 0.178093 41.9491C0.0667324 42.2251 0.0139599 42.5191 0.0227966 42.8144C0.0316315 43.1096 0.1019 43.4003 0.229588 43.6699C0.357275 43.9395 0.539881 44.1827 0.766981 44.3856C0.994081 44.5884 1.26123 44.747 1.55317 44.8523C1.84511 44.9576 2.15612 45.0075 2.46846 44.9991C2.78079 44.9907 3.08832 44.9243 3.3735 44.8036C3.65868 44.6829 3.91591 44.5103 4.13052 44.2956L24.3498 24.0575C24.7673 23.64 25 23.0872 25 22.5126C25 21.9381 24.7673 21.3853 24.3498 20.9678L4.13052 0.727421C3.91733 0.508038 3.66015 0.330879 3.37393 0.206249C3.0877 0.0816154 2.77813 0.0119896 2.4632 0.00141525C2.14827 -0.0091629 1.83425 0.0395203 1.53939 0.144638C1.24453 0.249752 0.974701 0.409203 0.745581 0.613731C0.516459 0.81826 0.332611 1.06379 0.204714 1.33605C0.0768185 1.60831 0.00742531 1.90189 0.000564575 2.19971C-0.00629807 2.49755 0.049509 2.7937 0.164745 3.07096C0.279982 3.34823 0.452347 3.60109 0.671833 3.81486L19.3497 22.5126L0.671833 41.2059Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="product-price">
+            <h1>Linden honey</h1>
+            <h3>Available</h3>
+            <h4>Product code 101</h4>
+            <h5>Weight</h5>
+            <div class="toggle">
+              <input type="radio" id="toggle250" name="weight" checked />
+              <label for="toggle250"> 250 g </label>
+
+              <input type="radio" id="toggle400" name="weight" />
+              <label for="toggle400"> 400 g </label>
+
+              <input type="radio" id="toggle1" name="weight" />
+              <label for="toggle1"> 1 kg </label>
+            </div>
+            <div class="buy">
+              <div class="buy-width bg">
+                <span class="buy-width1">-</span>
+                <span class="buy-width2">1</span>
+                <span class="buy-width3"><b>+</b></span>
+              </div>
+              <h6 class="buy-width">$5</h6>
+              <button class="button buy-width">
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.3889 11.0882H17.1667V7.08818H21.3333V4.42151H17.1667V0.421509H14.3889V4.42151H10.2222V7.08818H14.3889V11.0882ZM8.83333 23.0882C7.30556 23.0882 6.06945 24.2882 6.06945 25.7548C6.06945 27.2215 7.30556 28.4215 8.83333 28.4215C10.3611 28.4215 11.6111 27.2215 11.6111 25.7548C11.6111 24.2882 10.3611 23.0882 8.83333 23.0882ZM22.7222 23.0882C21.1944 23.0882 19.9583 24.2882 19.9583 25.7548C19.9583 27.2215 21.1944 28.4215 22.7222 28.4215C24.25 28.4215 25.5 27.2215 25.5 25.7548C25.5 24.2882 24.25 23.0882 22.7222 23.0882ZM10.3611 16.4215H20.7083C21.75 16.4215 22.6667 15.8748 23.1389 15.0482L28.5 5.70151L26.0833 4.42151L20.7083 13.7548H10.9583L5.04167 1.75484H0.5V4.42151H3.27778L8.27778 14.5415L6.40278 17.7948C5.38889 19.5815 6.72222 21.7548 8.83333 21.7548H25.5V19.0882H8.83333L10.3611 16.4215Z"
+                    fill="black"
+                    fill-opacity="0.8"
+                  />
+                </svg>
+                <span class="dashed"></span>
+              </button>
+            </div>
+            <div>
+              <h2>SHIPPING AND PAYMENT</h2>
+              <p>
+                When ordering for $100 or more, delivery is
+                <strong>FREE</strong> !
+              </p>
+              <p>
+                Delivery by mail in Ukraine to the branch or to the specified
+                address: <strong>Nova Poshta</strong>.
+              </p>
+              <p>
+                *Delivery cost according to the tariffs of the delivery service.
+              </p>
+            </div>
+            <div>
+              <h2>overview</h2>
+              <p>
+                Linden honey is an exquisite and unique product that impresses
+                with its delicate texture and distinctive floral-fruity aroma.
+                Harvested from linden blossoms, this honey has a unique flavor
+                filled with the warmth of a summer day, bringing a gentle touch
+                of natural sweetness to your life.
+              </p>
+              <p>
+                Honey collected from the nectar of linden blossoms and meadow
+                herbs. Boosts immunity, prevents cardiovascular diseases and
+                digestive disorders, eliminates toxins from the body, regulates
+                sleep, and treats inflammatory processes in the body.
+              </p>
+              <p>
+                Linden honey is known for its ability to alleviate stress and
+                improve sleep quality, creating an unsurpassed calming effect.
+              </p>
+              <p>
+                Choose natural linden honey from our online store to enjoy the
+                rich flavor and numerous health benefits of this unique product.
+              </p>
+              <p><strong>Ingredients:</strong> natural linden honey.</p>
+              <p>Store in a dry place at a temperature from +5 to +25 oC.</p>
+              <p>Shelf life: unlimited.</p>
+              <h2>Characteristics</h2>
+              <p><span>Type</span> flower nectar</p>
+              <p><span>Year of harvest</span> 2023</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <section class="footer-section">
+          <section class="logo">
+            <img src="./image/Logo footer.svg" alt="Brend Natural Honey" />
+          </section>
+
+          <section class="footer-main space-between">
+            <div class="footer-main-item max-width">
+              <h2 class="footer-title">Contacts</h2>
+              <ul>
+                <li>
+                  <img
+                    src="./image/footer-telefon.svg"
+                    alt="tel"
+                    style="float: left"
+                  />
+                  +380 (068) 000 00 00
+                </li>
+                <li>
+                  <img
+                    src="./image/footer-telegram.svg"
+                    alt="telegram"
+                    style="float: left"
+                  />
+                  info@naturalhoney.com
+                </li>
+                <li>
+                  <img
+                    src="./image/footer-adres.svg"
+                    alt=""
+                    style="float: left"
+                  />
+                  Dnipro, st. Lina Kostenko, 20
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-main-item">
+              <h2 class="footer-title">Subscribe to us</h2>
+              <div class="center">
+                <a href="#">
+                  <img src="./image/footer-inst.svg" alt="instagram" />
+                </a>
+                <a href="#">
+                  <img src="./image/footer-F.svg" alt="facebook" />
+                </a>
+              </div>
+            </div>
+            <div class="footer-main-item max-width">
+              <h2 class="footer-title">Information</h2>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Payment and delivery</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="footer-ligal">
+            <ul class="footer-ligal-list">
+              <li>
+                <img src="./image/footer-mastercard.svg" alt="mastercard" />
+              </li>
+              <li><img src="./image/footer-visa.svg" alt="visa" /></li>
+              <li>
+                <img src="./image/footer-googlepay.svg" alt="googlepay" />
+              </li>
+            </ul>
+            <p>
+              Copyright &copy; 2023-2024, Natural Honey | All rights reserved.
+            </p>
+          </section>
+        </section>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script type="text/javascript">
+      const emblaNode = document.querySelector(".embla");
+      const viewportNode = emblaNode.querySelector(".embla__viewport");
+      const options = { loop: true, duration: 30 };
+      const prevButtonNode = emblaNode.querySelector(".embla__prev");
+      const nextButtonNode = emblaNode.querySelector(".embla__next");
+      const plugins = [EmblaCarouselAutoplay({ delay: 10000 })];
+      const embla = EmblaCarousel(viewportNode, options, plugins);
+      prevButtonNode.addEventListener("click", embla.scrollPrev, false);
+      nextButtonNode.addEventListener("click", embla.scrollNext, false);
+    </script>
+  </body>
+</html>
