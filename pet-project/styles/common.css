@@ -102,6 +102,7 @@ a {
     border: 1px dashed #fef0cf;
   }
   .text {
+    color: #000;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
