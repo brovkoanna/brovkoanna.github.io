@@ -19,3 +19,11 @@
     width: 33.333%;
   }
 }
+.content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  letter-spacing: 0.3px;
+  padding-top: 20px;
+}

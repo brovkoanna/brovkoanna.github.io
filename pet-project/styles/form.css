@@ -1,0 +1,142 @@
+.form {
+  margin-top: 100px;
+  border: #332300 dashed 1px;
+  border-radius: 4px;
+  background-color: #f9efda;
+  padding: 50px 54px;
+  z-index: 1;
+  @media (min-width: 800px) {
+    margin-top: 0px;
+    padding: 100px 108.5px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    border: #654501 solid 1px;
+    border-radius: 4px;
+    background-color: #f9efda;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 26px;
+    margin-top: 9px;
+    caret-color: #654501;
+    resize: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-apperarance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+  }
+  textarea::placeholder,
+  input::placeholder {
+    color: #654501;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+  }
+  textarea:focus,
+  input:focus {
+    border: #654501 solid 3px;
+    outline: none;
+  }
+  textarea {
+    height: 150px;
+  }
+  .button {
+    margin-top: 12px;
+  }
+}
+
+.login {
+  justify-content: center;
+  align-items: center;
+  padding: 293px 10px 100px;
+  .form {
+    width: 100%;
+    max-width: 530px;
+    @media (min-width: 800px) {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    @media (min-width: 1140px) {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    label {
+      color: #332300;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+    }
+    .login-button {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .button {
+        width: 100%;
+        @media (min-width: 800px) {
+          width: 50%;
+        }
+      }
+      a {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 21px;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+        margin-top: 12px;
+        width: 100%;
+        @media (min-width: 800px) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+.userform {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10px 100px;
+  @media (min-width: 800px) {
+    padding-top: 200px;
+  }
+}
+.userform .form {
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .col2 {
+      width: 100%;
+      margin-left: 5px;
+      margin-right: 5px;
+      @media (min-width: 955px) {
+        width: 48%;
+      }
+    }
+  }
+}
+.userbutton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .button {
+    max-width: 305px;
+  }
+}

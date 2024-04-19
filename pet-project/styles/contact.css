@@ -22,7 +22,7 @@ main {
   padding-right: 10px;
 
   .contacts,
-  .form {
+  .contact-form {
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
@@ -90,58 +90,5 @@ main {
     background-size: 870px 557px;
     top: 295px;
     left: -134px;
-  }
-}
-.form {
-  margin-top: 100px;
-  border: #332300 dashed 1px;
-  border-radius: 4px;
-  background-color: #f9efda;
-  padding: 50px 54px;
-  max-height: 676px;
-  z-index: 1;
-  @media (min-width: 800px) {
-    margin-top: 0px;
-    padding: 100px 108.5px;
-  }
-
-  input,
-  textarea {
-    width: 100%;
-    border: #654501 solid 1px;
-    border-radius: 4px;
-    background-color: #f9efda;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    margin-bottom: 26px;
-    caret-color: #654501;
-    resize: none;
-    background: transparent;
-    -webkit-appearance: none;
-    -moz-apperarance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    outline: none;
-  }
-  textarea::placeholder,
-  input::placeholder {
-    color: #654501;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0.3px;
-  }
-  textarea:focus,
-  input:focus {
-    border: #654501 solid 3px;
-    outline: none;
-  }
-  textarea {
-    height: 150px;
-  }
-  .button {
-    margin-top: 12px;
   }
 }

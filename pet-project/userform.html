@@ -1,1 +1,243 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>userform</title>
+    <link rel="stylesheet" href="./styles/main.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <section class="space-between nav-container">
+          <div class="brand">
+            <a href="./index.html">
+              <img src="./image/logo header.svg" alt="Brend Natural Honey" />
+            </a>
+          </div>
+
+          <nav class="nav">
+            <ul class="menu">
+              <li><a class="menuItem" href="./index.html">Home</a></li>
+              <li><a class="menuItem" href="./catalog.html">Product</a></li>
+              <li><a class="menuItem" href="./shipping.html">Shipping</a></li>
+              <li><a class="menuItem" href="./about.html">About US</a></li>
+              <li><a class="menuItem" href="./blog.html">Blog</a></li>
+              <li><a class="menuItem" href="./contact.html">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div class="toolbar">
+            <ul>
+              <!-- <li><a href="">EN</a>/<a href="">UA</a></li> -->
+              <li>
+                <a href="./login.html"><img src="./image/user.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./image/shopping.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+            <button class="hamburger">
+              <svg
+                class="menuIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+              </svg>
+              <svg
+                class="closeIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+    </header>
+    <div class="container">
+      <main class="userform">
+        <section class="form">
+          <div class="col">
+            <div class="col2">
+              <label for="firast-name">Firast Name*</label>
+              <input
+                type="text"
+                id="firast-name"
+                placeholder="Enter Your Firast Name "
+              />
+            </div>
+            <div class="col2">
+              <label for="last-name">Last Name*</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Enter Your E-mail "
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col2">
+              <label for="email">E-mail Address*</label>
+              <input type="email" id="email" placeholder="Enter Your E-mail " />
+            </div>
+            <div class="col2">
+              <label for="numbrr">Pohne Numbrr*</label>
+              <input
+                type="tel"
+                id="numbrr"
+                placeholder="Enter Your pohne numbrr"
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col2">
+              <label for="street-address">Street Address*</label>
+              <input
+                type="text"
+                id="street-address"
+                placeholder="House number and street name"
+              />
+            </div>
+            <div class="col2">
+              <label for="apartment-numbrr">Apartment Numbrr*</label>
+              <input
+                type="text"
+                id="apartment-numbrr"
+                placeholder="Apartment, suite, unit, etc."
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col2">
+              <label for="city">City*</label>
+              <input type="text" id="city" placeholder="City" />
+            </div>
+            <div class="col2">
+              <label for="zip-code">ZIP Code*</label>
+              <input
+                type="text"
+                id="zip-code"
+                placeholder="Enter Your ZIP Code"
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col2">
+              <label for="country">Country*</label>
+              <input type="text" id="country" placeholder="Country" />
+            </div>
+            <div class="col2">
+              <label for="region-state"> Region / State*</label>
+              <input
+                type="text"
+                id="region-state"
+                placeholder="Region / State"
+              />
+            </div>
+          </div>
+          <div class="userbutton">
+            <button class="button">
+              <span class="text">Signyn</span>
+              <span class="dashed"></span>
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <section class="footer-section">
+          <section class="logo">
+            <img src="./image/Logo footer.svg" alt="Brend Natural Honey" />
+          </section>
+
+          <section class="footer-main space-between">
+            <div class="footer-main-item max-width">
+              <h2 class="footer-title">Contacts</h2>
+              <ul>
+                <li>
+                  <img
+                    src="./image/footer-telefon.svg"
+                    alt="tel"
+                    style="float: left"
+                  />
+                  +380 (068) 000 00 00
+                </li>
+                <li>
+                  <img
+                    src="./image/footer-telegram.svg"
+                    alt="telegram"
+                    style="float: left"
+                  />
+                  info@naturalhoney.com
+                </li>
+                <li>
+                  <img
+                    src="./image/footer-adres.svg"
+                    alt=""
+                    style="float: left"
+                  />
+                  Dnipro, st. Lina Kostenko, 20
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-main-item">
+              <h2 class="footer-title">Subscribe to us</h2>
+              <div class="center">
+                <a href="#">
+                  <img src="./image/footer-inst.svg" alt="instagram" />
+                </a>
+                <a href="#">
+                  <img src="./image/footer-F.svg" alt="facebook" />
+                </a>
+              </div>
+            </div>
+            <div class="footer-main-item max-width">
+              <h2 class="footer-title">Information</h2>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Payment and delivery</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="footer-ligal">
+            <ul class="footer-ligal-list">
+              <li>
+                <img src="./image/footer-mastercard.svg" alt="mastercard" />
+              </li>
+              <li><img src="./image/footer-visa.svg" alt="visa" /></li>
+              <li>
+                <img src="./image/footer-googlepay.svg" alt="googlepay" />
+              </li>
+            </ul>
+            <p>
+              Copyright &copy; 2023-2024, Natural Honey | All rights reserved.
+            </p>
+          </section>
+        </section>
+      </div>
+    </footer>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
