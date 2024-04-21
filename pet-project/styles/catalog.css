@@ -65,7 +65,7 @@
     text-align: center;
     text-transform: uppercase;
     width: 100%;
-    padding-top: 264px;
+    padding-top: 100px;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 42px;
@@ -76,6 +76,28 @@
   padding-bottom: 28px;
   h2 {
     margin: 0px;
+  }
+}
+.sort {
+  .select {
+    -webkit-animation: none;
+    -moz-animation: none;
+    appearance: none;
+    outline: none;
+    background-image: url(../image/selekt-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+    border: #654501 solid 1px;
+    background-color: #ffffff;
+    padding: 8px 32px 8px 12px;
+  }
+  .select,
+  option {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.3px;
   }
 }
 .left {

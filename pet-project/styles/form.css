@@ -55,7 +55,7 @@
 .login {
   justify-content: center;
   align-items: center;
-  padding: 293px 10px 100px;
+  padding: 100px 10px 100px;
   .form {
     width: 100%;
     max-width: 530px;
@@ -107,15 +107,23 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 100px 10px 100px;
+  padding: 10px 10px 10px;
   @media (min-width: 800px) {
-    padding-top: 200px;
+    padding: 100px 10px 100px;
   }
 }
 .userform .form {
   width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  @media (min-width: 800px) {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 53px;
+    padding-right: 53px;
+  }
 
   .col {
     display: flex;
