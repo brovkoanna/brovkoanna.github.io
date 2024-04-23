@@ -158,3 +158,7 @@ main h3 {
   margin-top: 16px;
   margin-bottom: 16px;
 }
+.active {
+  font-weight: 600;
+  text-decoration: underline solid 1px; /* Колір для активного пункту меню */
+}

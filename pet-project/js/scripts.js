@@ -70,6 +70,10 @@ const submitBuyingButton = document.querySelector(".submit-buying");
 
 //Products constants
 const buttonCards = document.querySelectorAll(".button-card");
+const productIncrementDecrement = document.getElementById(
+  "product-increase-descrise"
+);
+const singleProductAdd = document.getElementById("add-product");
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
@@ -130,7 +134,7 @@ const switchOverflowBody = () => {
 });
 
 //Products scripts
-const addToLocalStorage = (productId) => {
+const addToLocalStorage = (productId, count) => {
   let localProducts = JSON.parse(localStorage.getItem("products"));
   if (!localProducts) {
     localProducts = [];
@@ -140,9 +144,9 @@ const addToLocalStorage = (productId) => {
     return x.id === productId;
   });
   if (productIndex !== -1) {
-    localProducts[productIndex].count += 1;
+    localProducts[productIndex].count += count ? count : 1;
   } else {
-    localProducts.push({ id: productId, count: 1 });
+    localProducts.push({ id: productId, count: count ? count : 1 });
   }
 
   localStorage.setItem("products", JSON.stringify(localProducts));
@@ -275,7 +279,7 @@ busketProductsListBody.addEventListener("click", (event) => {
       decreaseProductInLocalStorage(productId);
     }
   } else if (
-    target.classList.contains(".buy-width3") ||
+    target.classList.contains("buy-width3") ||
     target.closest(".buy-width3")
   ) {
     const productId =
@@ -292,6 +296,37 @@ busketProductsListBody.addEventListener("click", (event) => {
   ).textContent = `$${countTotalProductsPrice()}`;
   changeBusketCounter();
 });
+
+if (productIncrementDecrement) {
+  productIncrementDecrement.addEventListener("click", (event) => {
+    const target = event.target;
+    const numberElement =
+      productIncrementDecrement.querySelector(".buy-width2");
+    let number = Number(numberElement.textContent);
+    if (target.classList.contains("buy-width1") && number > 1) {
+      number -= 1;
+      numberElement.textContent = number;
+    } else if (
+      target.classList.contains("buy-width3") ||
+      target.closest(".buy-width3")
+    ) {
+      number += 1;
+      numberElement.textContent = number;
+    }
+  });
+}
+
+if (singleProductAdd) {
+  singleProductAdd.addEventListener("click", () => {
+    const productId = singleProductAdd.dataset.productId;
+    const productCountElement =
+      productIncrementDecrement.querySelector(".buy-width2");
+    let productCount = Number(productCountElement.textContent);
+
+    addToLocalStorage(productId, productCount);
+    changeBusketCounter();
+  });
+}
 
 submitBuyingButton.addEventListener("click", (event) => {
   console.log("imitating buying the products and clearing the busket");
@@ -317,3 +352,15 @@ if (emblaNode) {
   prevButtonNode.addEventListener("click", embla.scrollPrev, false);
   nextButtonNode.addEventListener("click", embla.scrollNext, false);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPath = window.location.pathname; // Отримуємо поточний шлях сторінки
+  const menuItems = document.querySelectorAll("#menu .menuItem"); // Знаходимо всі пункти меню
+
+  menuItems.forEach((item) => {
+    const itemPath = item.dataset.path;
+    if (currentPath.includes(itemPath)) {
+      item.classList.add("active"); // Додаємо клас 'active', якщо шлях збігається
+    }
+  });
+});

@@ -12,6 +12,7 @@
     }
     img {
       width: 100%;
+      height: auto;
     }
     .embla__arrow {
       cursor: pointer;
@@ -114,7 +115,20 @@
     }
     .buy {
       display: flex;
+      flex-wrap: wrap;
       margin-bottom: 64px;
+      justify-content: center;
+      & .button {
+        margin-top: 20px;
+        width: 100%;
+        @media (min-width: 600px) {
+          width: 50%;
+        }
+        @media (min-width: 800px) {
+          width: 33.33%;
+          margin-top: 0%;
+        }
+      }
       h6 {
         color: #654501;
         font-size: 40px;
@@ -139,7 +153,11 @@
   align-items: center;
 }
 .buy-width {
-  width: 33.33%;
+  width: 50%;
+  @media (min-width: 800px) {
+    width: 33.33%;
+  }
+
   .buy-width1 {
     border: #986801 solid 3px;
     color: #986801;
@@ -153,6 +171,7 @@
     justify-content: center;
     align-items: end;
     padding-bottom: 3px;
+    cursor: pointer;
   }
   .buy-width2 {
     color: #000;
@@ -175,6 +194,7 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 9px;
+    cursor: pointer;
   }
 }
 #toggle250:checked + label,
