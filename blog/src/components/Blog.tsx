@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Blog(props: any) {
+function Blog(props) {
   const [post, setPost] = useState(props.post);
   return (
     <article className="post">

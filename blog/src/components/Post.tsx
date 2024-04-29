@@ -5,7 +5,7 @@ import Layout from "./Layout";
 function Post() {
   const [post, setPost] = useState({});
 
-  const fetchData = async (url: string) => {
+  const fetchData = async (url: any) => {
     const data = await (await fetch(url)).json();
     setPost(data);
   };

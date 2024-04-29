@@ -1,8 +1,24 @@
 const Navbar = (
-  <header>
-    <h1>Welcome to React</h1>
-    <h2>Getting Started React</h2>
-    <h3>JavaScript Library</h3>
-  </header>
+  <section>
+    <nav className="">
+      <ul className="">
+        <li>
+          <a className="text-3xl" href="#">
+            Home
+          </a>
+        </li>
+        <li>
+          <a className="text-3xl" href="#">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a className="text-3xl" href="#">
+            About US
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
 );
 export default Navbar;

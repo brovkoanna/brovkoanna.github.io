@@ -1,4 +1,4 @@
-// Layout.tsx
+// Layout.jsx
 import { useState, useEffect } from "react";
 import Header from "./Header";
 import PostTitle from "./PostTitle";

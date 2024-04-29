@@ -1,11 +1,5 @@
 import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import "./App.css";
-// import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
-// import Gallery from "./components/Gallery";
-// import Blog from "./components/Blog";
 import Post from "./components/Post";
 
 function App() {
@@ -19,13 +13,10 @@ function App() {
   };
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
       <Post post={post} key={post.id} />
+      <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+        Testmkemgdlmh;lft;lhg
+      </div>
     </>
   );
 }

@@ -1,12 +1,16 @@
 // Header.tsx
 import { usePost } from "./PostContext";
+import Navbar from "./Navbar";
 
 const Header = () => {
   const post = usePost();
   return (
-    <div className="cover-container">
-      <img src={post.cover} alt={post.title} />
-    </div>
+    <header>
+      {Navbar}
+      <div className="cover-container">
+        <img src={post.cover} alt={post.title} />
+      </div>
+    </header>
   );
 };
 
